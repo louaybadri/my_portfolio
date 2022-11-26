@@ -1,0 +1,32 @@
+* {
+    font-family: "BIZ UDMincho", serif;
+    letter-spacing: .2ch;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    /*grid-template-columns:1fr 1fr*/
+}
+
+.simple-char {
+    text-align: center;
+    /*width: ;*/
+    padding: 8vh 0 8vh 0;
+    margin: 0 8vh 0 8vh;
+    border-radius: 30%;
+    border: green 3px solid;
+    font-weight: bold;
+    color: green;
+    font-size: 5ch;
+    letter-spacing: 0.7ch;
+}
