@@ -1,0 +1,64 @@
+.NavBar {
+    display: flex;
+    width: 100vw;
+    /*position: fixed;*/
+    /*top: 0;*/
+    justify-content: space-evenly;
+    align-items: center;
+    /*padding: 20px;*/
+}
+
+.NavBar img {
+    width: 10vw;
+
+}
+
+.NavBarItem {
+    height: 5vh;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+
+}
+
+
+.NavBarItem .onHover {
+    position: absolute;
+    padding: 3ch;
+    margin: 2ch;
+    width: 0;
+    left: 10%;
+    border: solid 7px transparent;
+    border-radius: 5%;
+    transition: width 2s ease, border-color 2s ease, left 2s ease;
+}
+
+.NavBarItem:hover .onHover {
+    border-color: rgba(54, 196, 147, 255);
+    width: 70%;
+    left: 0;
+}
+
+
+.NavBarItem .text {
+    font-weight: bold;
+    color: white;
+    width: 30vw;
+    font-size: 1.8ch;
+    padding-left: 0;
+    transition: padding-left 2s ease;
+    max-lines: 2;
+}
+
+.NavBarItem:hover .text {
+    padding-left: 20%;
+}
+
+@media screen and (max-width: 480px) {
+    .NavBar {
+        display: inline;
+        /*background-color: lightgreen;*/
+    }
+}
