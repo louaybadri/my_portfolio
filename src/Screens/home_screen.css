@@ -1,0 +1,155 @@
+
+.presentation {
+    width: 50vw;
+    padding-left: 5vw;
+}
+
+.header-text {
+    display: flex;
+    width: 40vw;
+
+
+}
+
+.header-text h4 {
+
+    color: #a4a4a4;
+}
+
+.header-text h2 {
+    font-weight: bold;
+    /*padding: 0 2vw;*/
+
+    color: rgba(54, 196, 147, 255);
+}
+
+.me-text {
+    width: 30vw;
+    margin: 0 0 0 10vw;
+}
+
+.me-text h3 {
+    color: #a4a4a4;
+    font-size: 3vw;
+}
+
+.me-text h1 {
+    font-weight: bold;
+    font-size: 5vw;
+    /*padding: 0 2vw;*/
+    /*color: rgba(54, 196, 147, 255);*/
+}
+
+.home-container {
+    display: flex;
+    justify-content: end;
+}
+
+.cv {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 35vw;
+}
+
+.cv .border {
+    border-radius: 50%;
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    z-index: 3;
+}
+
+@keyframes animateD {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: -360deg;
+    }
+}
+
+@keyframes animateI {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.cv .border-1 {
+    padding: 2vw;
+    border-top: white solid 5px;
+    animation: animateD 3s ease-in-out infinite;
+}
+
+.cv .border-2 {
+    padding: 3vw;
+
+    animation: animateI 3s ease-in-out infinite;
+    border-bottom: white solid 5px;
+}
+
+.cv .border-3 {
+    padding: 4vw;
+
+    animation: animateD 3s ease-in-out infinite;
+    border-top: white solid 5px;
+}
+
+
+.cv .text {
+    border: white solid 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    /*background-color: green;*/
+    font-size: 2vw;
+    text-align: center;
+}
+
+.cv .background {
+    position: absolute;
+    font-family: "Teko", serif;
+    color: rgba(54, 196, 147, 255);
+    font-weight: bold;
+    font-size: 10vw;
+    z-index: 0;
+    opacity: 0.2;
+    rotate: -35deg;
+    letter-spacing: 1ch;
+    translate: 2vw -1vw;
+}
+
+.cv .circle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(54, 196, 147, 255);
+    z-index: 0;
+    transition: width 1s ease, height 1s ease;
+}
+
+.cv .text {
+    color: rgba(54, 196, 147, 255);
+    z-index: 1;
+}
+
+.cv:hover .text {
+    color: black;
+    font-weight: bold;
+    font-size: 2vw;
+    /*background-color: rgba(54, 196, 147, 255);*/
+}
+
+.cv:hover .circle {
+    width: 20vw;
+    height: 20vw;
+}

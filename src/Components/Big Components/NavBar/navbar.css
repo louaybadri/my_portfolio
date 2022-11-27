@@ -1,16 +1,8 @@
 .NavBar {
     display: flex;
     width: 100vw;
-    /*position: fixed;*/
-    /*top: 0;*/
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    /*padding: 20px;*/
-}
-
-.NavBar img {
-    width: 10vw;
-
 }
 
 .NavBarItem {
@@ -19,36 +11,35 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 15%;
-
+    margin: 2.2vw 3vw;
 }
 
 
 .NavBarItem .onHover {
     position: absolute;
-    padding: 3ch;
-    margin: 2ch;
+    padding: 2vw;
+    margin: 0.5vw;
     width: 0;
-    left: 10%;
+    left: 0;
     border: solid 7px transparent;
-    border-radius: 5%;
-    transition: width 2s ease, border-color 2s ease, left 2s ease;
+    border-radius: 2%;
+    transition: width 2s ease, border-color 2s ease-out, left 1s ease-in-out;
 }
 
 .NavBarItem:hover .onHover {
     border-color: rgba(54, 196, 147, 255);
-    width: 70%;
-    left: 0;
+    width: 80%;
+    /*left: -10%;*/
 }
 
 
 .NavBarItem .text {
     font-weight: bold;
     color: white;
-    width: 30vw;
-    font-size: 1.8ch;
+    width: 25vw;
+    font-size: 1.8vw;
     padding-left: 0;
-    transition: padding-left 2s ease;
+    transition: padding-left 1s ease;
     max-lines: 2;
 }
 
@@ -59,6 +50,5 @@
 @media screen and (max-width: 480px) {
     .NavBar {
         display: inline;
-        /*background-color: lightgreen;*/
     }
 }

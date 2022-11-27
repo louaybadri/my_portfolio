@@ -1,5 +1,6 @@
 import './App.css';
 import NavBar from "./Components/Big Components/NavBar/NavBar";
+import Home_screen from "./Screens/home_screen";
 
 
 function App
@@ -8,7 +9,9 @@ function App
     return (
         <div className="full-screen">
             <NavBar/>
-            <h4>{"<h1>This is</h1>"}</h4>
+            <div className={"header-text"}>
+                <Home_screen/>
+            </div>
         </div>
     );
 }
