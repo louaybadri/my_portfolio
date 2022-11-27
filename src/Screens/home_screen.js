@@ -4,6 +4,7 @@ function HomeScreen() {
     return (
         <div className={"home-container"}>
             <div className={"presentation"}>
+
                 <div className={"header-text"}>
                     <h4>{"<p>"}</h4>
                     <h2>{"This is"}</h2>
@@ -11,9 +12,18 @@ function HomeScreen() {
                 </div>
                 <div className={"me-text"}>
                     <h3>{"<p>"}</h3>
-                    <h1>{"Louay"}</h1>
-                    <h1>{" Badri"}</h1>
+                    <h1>{"Louay Badri"}</h1>
+                    {/*<h1>{" "}</h1>*/}
                     <h3>{"</p>"}</h3>
+                </div>
+
+                <div className={"header-text header-text2"}>
+                    <h4>{"<p>"}</h4>
+                    <h2>{"Software Engineer"}</h2>
+                    <h4>{"</p>"}</h4>
+                </div>
+                <div className="background2">
+                    {"<More ... />"}
                 </div>
             </div>
             <div className="cv">
