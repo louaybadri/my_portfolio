@@ -1,9 +1,19 @@
 import NavbarItem from "./navbarItem";
 import IMG from "../../../Assets/me.jpg"
+import {useContext} from "react";
+import {PagesContext} from "../../../Context/test";
 
 function NavBar() {
+
+    const [page, setPage] = useContext(PagesContext)
     return (<>
-        <div className={"NavBar"}>
+        <div onClick={
+            () => {
+                setPage(!page);
+                console.log(page)
+            }
+
+        } className={"NavBar"}>
             <div>
                 <NavbarItem text={"Home"}/>
                 <NavbarItem text={"Projects"}/>

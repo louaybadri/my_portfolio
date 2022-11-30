@@ -1,8 +1,12 @@
 import "./home_screen.css"
+import {useContext, useState} from "react";
+import {PagesContext} from "../Context/test";
 
 function HomeScreen() {
+
+    const [page, setPage] = useContext(PagesContext)
     return (
-        <div className={"home-container"}>
+        <div className={"home-container".concat(page ? " fade-in" : " fade-out")}>
             <div className={"presentation"}>
 
                 <div className={"header-text"}>
